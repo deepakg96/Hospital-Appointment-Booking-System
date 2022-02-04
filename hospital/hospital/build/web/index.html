@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h1{
+        text-align: center;
+        color: brown
+    }
+    h2{
+        font-family: TimesNewRoman;
+        color:black;
+        text-align: center;
+    }
+
+    body{
+        background-image: url("1.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        
+    }
+    div{
+        text-align: left;
+        font-size: 25px;
+        margin-left: 20px;
+        padding: 15px;
+        width: 300px;
+    }
+    input[type="text,email"]{
+        width: 200px;
+        height: 150px;
+    }
+</style>   
+
+</head>
+<body>
+    
+    <h1 style="color:brown; ">APPOINTMENT REGISTRATION SYSTEM</h1>
+    
+    <div>
+<h2 align="left"><b>Registration</b></h2>
+<fieldset>
+    <legend><b>New user</b></legend>
+    <form action ="register" method="post">
+    Username:<br/>
+    <input type="text" name="uname"/><br/><br/>
+    Age: <br/>
+    <input type="number" name="age"/><br/>
+        <br/>
+    DOB:<br/> 
+    <input type="text" name="dob"/><br/><br/>
+    Phone number:<br/>
+    <input type="number" name="phnum"/><br/><br/>
+    Email :<br/>
+    <input type="email" name="email"/><br/><br/>
+    Password:<br/>
+    <input type="password" name="passwd"/><br/><br/>
+    <input type="submit" name="Register" value="Register"/><br/><br/>
+    </form>
+</fieldset>
+</div>
+<br/>
+
+<div >
+<h2><b>LOGIN PORTAL</b></h2>
+<fieldset>    
+    <legend><b>Existing User</b></legend>
+    <br/>
+        <form action ="login" method="post">
+        Username:<br/> 
+        <input type="text" name="uname"/><br/><br/>
+        Password: <br/>
+        <input type="password" name="passwd"/><br/><br/>
+        <input type="submit" name="Login" value="Login"/>
+    </form>
+    </fieldset>
+
+<br/>   
+    <fieldset>    
+        <legend><b>DOCTOR'S LOGIN</b></legend>
+    <br/>
+        <form action ="ViewAppmnt" method="post">
+        Username: <br/>
+        <input type="text" name="uname"/><br/><br/>
+        Password: <br/>
+        <input type="password" name="passwd"/><br/><br/>
+        <input type="submit" name="Login" value="Login"/>
+    </form>
+    </fieldset>
+
+    </div>
+    </body>
+</html>

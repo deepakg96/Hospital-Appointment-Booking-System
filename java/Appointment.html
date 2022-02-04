@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: lightgoldenrodyellow;
+            }
+            div{
+                font-size: 25px;
+                
+            }
+        </style>
+</head>
+    <body>
+        <h1 style="text-align: center;background-color: burlywood;"><b>Booking slot</b></h1>
+        <div>
+        <fieldset>
+            <legend>Appointment Booking</legend><br/>        
+        <form action="appt" method="post">
+            Name: <br/>        
+            <input type="text" name="name"/><br/><br/>
+            Date:<br/>
+            <input type="date" name="dmy"/><br/><br/>
+            Time Slot:<br/>
+            <input type="text" name="time"/><br/><br/>
+            Department:<br/>
+            <input type="text" name="dept"/><br/><br/>
+            Description:<br/>
+            <input type="text" name="desc"/><br/><br/>
+            <input type="submit" name="sub" value="submit"/>
+        </form>
+        </fieldset>
+        </div>
+    </body>
+</html>
